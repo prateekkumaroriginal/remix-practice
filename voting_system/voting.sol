@@ -15,7 +15,7 @@ contract Voting {
         uint256 voteCount;
     }
 
-    Candidate[] public candidates;
+    Candidate[] internal candidates;
     mapping(address => bool) public registeredVoters;
     mapping(address => bool) public hasVoted;
 
